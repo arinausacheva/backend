@@ -46,13 +46,13 @@ if (!empty($messages)) {
     
     <form action="index.php" method="POST">
             <div class="pas <?php if ($errors['name']) {print 'error';} ?>" >
-                Имя:
+                Имя:<br>
                 <input name="name" placeholder="Введите имя" 
                  value="<?php print $values['name']; ?>" />
             </div>
 
             <div class="pas <?php if ($errors['email']) {print 'error';} ?>">
-                E-mail:
+                E-mail:<br>
                 <input name="email" type="email" placeholder="Введите почту" value="<?php print $values['email']; ?>"
 	            >
             </div>
@@ -123,7 +123,7 @@ if (!empty($messages)) {
 
             <p>
                 Отправка формы:
-                <input type="submit" value="Send" />
+                <input type="submit" value="Отправить" />
             </p>
         </form>
     </div>
