@@ -27,7 +27,7 @@ a{
     margin:2%;
     padding: 5%;
     border: 1px solid;
-    border-color: #fd0130;
+    border-color: black;
     border-radius: 3px;
 }
 .error {
@@ -136,7 +136,7 @@ if (!empty($messages)) {
                 ?>
 
                 
-                <input type="submit" value="Send" />
+                <input type="submit" value="Отправить" />
                 </form>
             <?php
             if(empty($_SESSION['login'])){
