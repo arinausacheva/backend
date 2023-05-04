@@ -1,0 +1,26 @@
+body{
+  background-color: #ba6f54;
+  display: flex;
+  justify-content:center;
+  margin-top:5%;
+  margin-bottom:5%;
+}
+
+main{
+  padding: 40px;
+  width: 250px;
+  color: white;
+  background-color: #F2B996;
+  border: 2px solid black;
+}
+
+h1{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+p{
+  padding: 5%;
+  border: 1px solid black;
+  border-radius: 3px;
+}
