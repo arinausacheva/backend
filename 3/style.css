@@ -1,16 +1,16 @@
 body{
-  background-color: #ba6f54;
+  background-color: #F2B996;
   display: flex;
   justify-content:center;
   margin-top:5%;
   margin-bottom:5%;
 }
 
-main{
+.main{
   padding: 40px;
   width: 250px;
   color: white;
-  background-color: green;
+  background-color: #F2B996;
   border: 2px solid black;
 }
 
