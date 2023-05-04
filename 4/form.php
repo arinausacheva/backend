@@ -1,6 +1,6 @@
 <style>
 body{
-    background-color: #eea273;
+    background-color: #fcee0a;
     display: flex;
     justify-content:center;
     margin-top:5%;
@@ -9,8 +9,8 @@ body{
 .main{
     padding: 40px;
     width: 250px;
-    background-color: #F2B996;
-    border: 2px solid black;
+    background-color: #00ffd2;
+    border: 2px solid #fd0130;
 }
 
 h1{
@@ -45,13 +45,13 @@ if (!empty($messages)) {
     
     <form action="index.php" method="POST">
             <div class="pas <?php if ($errors['name']) {print 'error';} ?>" >
-                Имя:<br>
+                Имя:
                 <input name="name" placeholder="Введите имя" 
                  value="<?php print $values['name']; ?>" />
             </div>
 
             <div class="pas <?php if ($errors['email']) {print 'error';} ?>">
-                E-mail:<br>
+                E-mail:
                 <input name="email" type="email" placeholder="Введите почту" value="<?php print $values['email']; ?>"
 	            >
             </div>
@@ -111,7 +111,7 @@ if (!empty($messages)) {
             </div>
 
             <div class="pas <?php if ($errors['bio']) {print 'error';} ?>">
-                Биография?<br>
+                Биография?
                 <textarea name="bio"><?php print $values['bio']; ?></textarea>
             </div>
 
@@ -122,7 +122,7 @@ if (!empty($messages)) {
 
             <p>
                 Отправка формы:
-                <input type="submit" value="Отправить" />
+                <input type="submit" value="Send" />
             </p>
         </form>
     </div>
