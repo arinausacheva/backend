@@ -12,6 +12,7 @@ body{
   color: white;
   background-color: #F2B996;
   border: 2px solid black;
+  border-radius: 5px;
 }
 
 h1{
