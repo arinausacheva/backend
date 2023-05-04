@@ -10,7 +10,7 @@ body{
     padding: 40px;
     width: 250px;
     background-color: #F2B996;
-    border: 2px solid #fd0130;
+    border: 2px solid black;
     border-radius: 5px;
 }
 
@@ -154,7 +154,7 @@ if (!empty($messages)) {
                 </div>';
             } ?>
 
-            <?php if ($errors['check-1']) {print 'error';} ?> ">
+            <?php if ($errors['check-1']) {print 'error';} ?>
             <?php if($values['check-1']==TRUE){print 'checked';} ?>
         </form>
     </div>
