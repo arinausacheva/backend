@@ -71,7 +71,7 @@ else {
   $bioregex = "/^\s*\w+[\w\s\.,-]*$/";
   $nameregex = "/^\w+[\w\s-]*$/";
   $mailregex = "/^[\w\.-]+@([\w-]+\.)+[\w-]{2,4}$/";
-	.
+	
   $errors = FALSE;
   if ((empty($_POST['name'])) || (!preg_match($nameregex,$_POST['name']))) {
     setcookie('name_error', '1', time() + 24 * 60 * 60);
@@ -174,6 +174,7 @@ else {
     exit();
   }
   else {
+    // Удаляем Cookies с признаками ошибок.
     setcookie('name_error', '', 100000);
     setcookie('email_error', '', 100000);
     setcookie('year_error', '', 100000);
@@ -224,6 +225,8 @@ $pass = '5206479';
     print('Error : ' . $e->getMessage());
     exit();
   }
+
   setcookie('save', '1');
+
   header('Location: index.php');
 }
