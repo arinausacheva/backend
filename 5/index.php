@@ -89,9 +89,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   $values['check-1'] = empty($_COOKIE['check_value']) ? FALSE : $_COOKIE['check_value'];
 
   if (!$error && !empty($_COOKIE[session_name()]) && !empty($_SESSION['login'])) {
-    $user = 'u52927';
-    $pass = '5758562';
-    $db = new PDO('mysql:host=localhost;dbname=u52927', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+    $user = 'u52835';
+    $pass = '5206479';
+    $db = new PDO('mysql:host=localhost;dbname=u52835', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     try{
       $get=$db->prepare("SELECT * FROM form WHERE id=?");
       $get->bindParam(1,$_SESSION['uid']);
